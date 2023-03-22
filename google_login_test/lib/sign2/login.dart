@@ -25,7 +25,7 @@ class Login extends StatelessWidget {
       print(userCredential);
 
       Navigator.of(context).pushReplacement(MaterialPageRoute(
-          builder: (context) => GoogleLoggedInPage() //페이지연결, userCredential넘겨줌
+          builder: (context) => GoogleLoggedInPage(userCredential: userCredential) //페이지연결, userCredential넘겨줌
       ));
     } else {
       ScaffoldMessenger.of(context)

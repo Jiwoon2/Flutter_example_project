@@ -10,7 +10,7 @@ class GoogleSignInApi {
 
   static Future logout() async {
     await FirebaseAuth.instance.signOut();
-    await _googleSignIn.disconnect();
+    await _googleSignIn.disconnect(); //await _googleSignIn.signOut();
   }
 
 }
